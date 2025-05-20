@@ -1,12 +1,35 @@
-# React + Vite
+# 📊 React Admin Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive and dynamic dashboard UI built with **React**, **Vite**, **Tailwind CSS**, and **Shadcn UI**, featuring:
 
-Currently, two official plugins are available:
+- Sidebar navigation
+- User management table with filters & sorting
+- Recharts-based role analytics
+- Responsive layout for desktop and mobile
+- Clean, maintainable folder structure
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Hosted on **[Vercel](https://vercel.com/)** 🌐
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## ✨ Features
+
+- 🔍 Search and sort users by name
+- 📊 Bar and pie charts for user roles
+- 🧱 Clean reusable component architecture
+- 🎨 Fully responsive & mobile-friendly
+- 🚀 Quick and smooth user experience
+
+---
+
+## 📁 Tech Stack
+
+| Tech       | Use                            |
+|------------|---------------------------------|
+| React      | UI Framework                    |
+| Vite       | Fast build tool & dev server    |
+| Tailwind   | Utility-first CSS styling       |
+| Shadcn UI  | Prebuilt UI blocks              |
+| Recharts   | Beautiful data visualization    |
+| Vercel     | Hosting & deployment            |
+
