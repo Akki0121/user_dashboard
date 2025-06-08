@@ -1,9 +1,16 @@
 import React from "react";
-import { Link, useLocation } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { Home, Table, X, UserPlus } from "lucide-react";
 
-const Sidebar = ({ isOpen, setIsOpen }) => {
+const Sidebar = ({ isOpen, setIsOpen, setIsAuthenticated }) => {
   const location = useLocation();
+  const navigate = useNavigate();
+
+  const handleLogout = () => {
+    setIsAuthenticated(false);
+    console.log(setIsAuthenticated);
+    navigate("/login");
+  };
 
   const navItems = [
     { label: "Dashboard", icon: <Home className="w-5 h-5" />, path: "/" },
@@ -51,6 +58,14 @@ const Sidebar = ({ isOpen, setIsOpen }) => {
           ))}
         </nav>
       </div>
+      <button
+        onClick={handleLogout}
+        className={
+          "relative bottom-20 left-5 bg-blue-600 text-gray-100 rounded-4xl px-4 w-4/5 py-1 hover:shadow-md hover:shadow-blue-300"
+        }
+      >
+        Logout
+      </button>
     </aside>
   );
 };
