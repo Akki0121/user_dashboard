@@ -13,7 +13,6 @@ const Login = ({ setIsAuthenticated }) => {
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
   const [showPassword, setShowPassword] = useState(false);
-  const [checkAdminLoginStatus, setCheckAdminLoginStatus] = useState(false);
 
   const handleLogin = async (e) => {
     e.preventDefault();
@@ -23,7 +22,6 @@ const Login = ({ setIsAuthenticated }) => {
       console.log(email === "ankit@example.com" && password === "12345");
       if (email === "ankit@example.com" && password === "12345") {
         setIsAuthenticated(true);
-        setCheckAdminLoginStatus(true);
         navigate("/");
       }
     } catch (error) {
@@ -34,18 +32,8 @@ const Login = ({ setIsAuthenticated }) => {
     }
   };
 
-  //   useEffect(() => {
-  //     if (checkAdminLoginStatus) {
-  //       navigate("/");
-  //     }
-  //   }, [checkAdminLoginStatus]);
-
   return (
     <div className="login bg-blend-hue flex items-center justify-center h-full">
-      {/* <Helmet>
-        <title>E-Commerce</title>
-      </Helmet> */}
-
       <form
         onSubmit={handleLogin}
         className="bg-slate-800 max-h-fit p-8 rounded-xl shadow-2xl shadow-slate-400 w-96 space-y-4 flex flex-col justify-center "
