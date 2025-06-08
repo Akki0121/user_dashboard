@@ -19,7 +19,6 @@ const Login = ({ setIsAuthenticated }) => {
     setLoading(true);
     setError("");
     try {
-      console.log(email === "ankit@example.com" && password === "12345");
       if (email === "ankit@example.com" && password === "12345") {
         setIsAuthenticated(true);
         navigate("/");

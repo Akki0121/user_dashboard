@@ -50,7 +50,7 @@ const App = () => {
                 IsAuthenticated ? (
                   <Dashboard users={users} />
                 ) : (
-                  <Navigate to="/login" />
+                  <Navigate to="/login" state={{ from: location }} />
                 )
               }
             />

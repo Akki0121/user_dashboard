@@ -8,7 +8,6 @@ const Sidebar = ({ isOpen, setIsOpen, setIsAuthenticated }) => {
 
   const handleLogout = () => {
     setIsAuthenticated(false);
-    console.log(setIsAuthenticated);
     navigate("/login");
   };
 
